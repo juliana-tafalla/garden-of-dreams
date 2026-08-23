@@ -1,0 +1,73 @@
+[
+    {
+        "id": "web-dev-shift",
+        "role": "web developer",
+        "duration": "Sep 2025 - Dec 2025",
+        "logo": "images/experiences/shift-logo.svg",
+        "company": "Shift AI - Shift Technologies Canada Inc.",
+        "link": "https://www.shiftfleet.ai/",
+        "about": "Shift AI, developed by Shift Technologies Canada Inc., is an AI-powered platform for fleet and asset management, allowing businesses to manage their fleet operations efficiently by utilizing real-time data and predictive analytics.",
+        "contributionsDesc": "as a web developer, it was my responsibility to manage Shift Technologies Canada Inc.'s website for Shift AI, ensuring that information on the website was accurate to the approved content and that any issues were identified and corrected.",
+        "contributionsList": [
+            "conducting quality assurance on the website to correct content and information accuracy issues.",
+            "addressing user experience issues to ensure responsiveness and accessibility, improve CTAs, and optimize the website's home page loading speed.",
+            "writing and publishing a blog on the website to highlight Shift AI's accomplishments.",
+            "planning, designing, and implementing prototypes to redesign a website page's contents.",
+            "planning, designing and implementing a new page, allowing users to explore and search for hardware devices compatible with the platform."
+        ],
+        "skillsList": [
+            [
+                "WordPress and Elementor",
+                " gained hands-on experience with WordPress and Elementor by learning introductory materials and best practices while integrating them with my prior HTML, CSS, and JavaScript experiences to manage Shift AI's website."
+            ],
+            [
+                "jQuery",
+                "extended my basic knowledge of JavaScript by learning jQuery to simplify the additional code integrated in WordPress/Elementor for the new section's initial versions."
+            ],
+            [
+                "responsive and accessible design",
+                "gained hands-on experience with responsive and accessible design by addressing general design issues (colour contrast, etc.), addressing design issues in mobile/tablet views (overflows, etc.), writing additional code for mobile/tablet views, and testing the website on different devices to ensure the website is user-friendly across various viewports."
+            ],
+            [
+                "user experience",
+                "improved user experience by optimizing images for enhanced loading speed, adjusting CTA buttons and links for better readability, and adding missing and incorrect content and images for completeness and accuracy."
+            ],
+            [
+                "initiative, problem-solving skills, and self-management",
+                "took initiative to suggest and implement prototypes to ensure the relevant sections match the overall website. despite some access and editing restrictions, addressed multiple issues by finding alternative ways to solve them. able to work independently with minimal supervision while keeping track of daily activities to update my supervisor weekly."
+            ]
+        ]
+    },
+    {
+        "id": "web-dev-cloudrep",
+        "role": "web developer",
+        "duration": "Sep 2025 - Dec 2025",
+        "logo": "images/experiences/cloudrep-logo.svg",
+        "company": "CloudRep - Shift Technologies Canada Inc.",
+        "link": "https://www.cloudrep.ai/",
+        "about": "CloudRep, developed by Shift Technologies Canada Inc., is an AI-powered voice agent and communication platform designed to automate inbound and outbound call campaigns for any industry.",
+        "contributionsDesc": "as a web developer, it was my responsibility to manage Shift Technologies Canada Inc.'s website for CloudRep, ensuring that information on the website was accurate to the approved content and that any issues were identified and corrected.",
+        "contributionsList": [
+            "conducting quality assurance on the website to correct content and information accuracy issues.",
+            "addressed user experience issues to ensure consistency, responsiveness, and accessibility."
+        ],
+        "skillsList": [
+            [
+                "WordPress and Elementor",
+                "gained hands-on experience with WordPress and Elementor by learning introductory materials and best practices while integrating them with my prior HTML, CSS, and JavaScript experiences to manage CloudRep's website."
+            ],
+            [
+                "responsive and accessible design",
+                "gained hands-on experience with responsive and accessible design by addressing general design issues (inconsistencies, etc.), addressing design issues in mobile/tablet views (overflows, etc.), and testing the website on different devices to ensure the website is user-friendly across various viewports."
+            ],
+            [
+                "user experience",
+                "improved user experience by addressing missing and incorrect content for completeness and accuracy."
+            ],
+            [
+                "self-management",
+                "able to work independently with minimal supervision while keeping track of daily activities to update my supervisor weekly."
+            ]
+        ]
+    }
+]

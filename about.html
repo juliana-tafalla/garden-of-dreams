@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>garden of dreams</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/output.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">home</a></li>
+            <li><a href="experiences.html">experiences</a></li>
+            <li><a href="about.html" class="active">about me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="about-me" class="relative bg-about">
+            <div id="guide-interaction">
+                <button id="null" class="p-3 lg:p-4 hidden md:block invisible">
+                    <img src="images/garden/guide-interaction-icon.svg" alt="a guide interaction icon. hello!" class="w-3/4 md:w-auto m-auto md:m-0" />
+                </button>
+            </div>
+        
+            <h2 id="mobile-heading"
+                class="p-3 text-2xl text-center md:hidden">
+                all about me!
+            </h2>
+
+            <img id="background" src="images/garden/about-bg-1.png" alt="garden of dream's field of wonders. welcome!"
+                class="w-[90%] md:w-4/5 lg:w-auto" />
+
+            <h2
+                class="absolute top-[8%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl md:text-3xl lg:text-4xl text-center hidden md:block">
+                all about me!
+            </h2>
+
+            <div id="diary"
+                class="absolute p-2 w-[85%] md:w-9/12 lg:w-[800px] h-3/4 md:h-4/5 lg:h-[500px] md:top-[53%] md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 overflow-y-auto gap-5 md:gap-4">
+
+                <!-- left projection -->
+                <div id="main-left-projection" class="w-full lg:w-[750px] h-full lg:h-[450px] text-center order-2 md:order-1 md:overflow-y-auto">
+                    <div id="content" class="justify-center content-center gap-2 md:gap-3">
+                        <h3 class="text-lg md:text-xl lg:text-2xl">diary of a dreamer</h3>
+
+                        <img id="pfp" src="images/about/juliana!.png" alt="that's me!" class="w-1/2 md:w-[65%] lg:w-auto m-auto"/>
+
+                        <p class="text-sm lg:text-base font-sansita">welcome to my garden. it's nice to meet you!</p>
+                        
+                        <button id="mysterious-btn">
+                            <img src="images/garden/mysterious-btn-icon-2.svg" alt="a mysterious button that looks like a moon. hm..." class="w-auto m-auto" />
+                        </button>
+                    </div>
+                </div>
+
+                <!-- right projection -->
+                <div id="main-right-projection" class="w-full lg:w-[750px] h-full lg:h-[450px] order-1 md:order-2 md:overflow-y-auto">
+                    <div id="content" class="justify-center content-center gap-3">
+                        <div id="name">
+                            <p class="text-sm lg:text-base">name</p>
+                            <p class="text-base md:text-lg lg:text-xl font-sansita">Juliana Tafalla</p>
+                        </div>
+
+                        <div id="university">
+                            <p class="text-sm lg:text-base">university</p>
+                            <p class="text-base md:text-lg lg:text-xl font-sansita">Mount Royal University</p>
+                        </div>
+
+                        <div id="program">
+                            <p class="text-sm lg:text-base">program</p>
+                            <p class="text-base md:text-lg lg:text-xl font-sansita">Computer Science</p>
+                        </div>
+
+                        <div id="interests">
+                            <p class="text-sm lg:text-base">interests</p>
+                            <ul id="list" class="text-base md:text-lg lg:text-xl font-sansita">
+                                <li><button id="games">games</button></li>
+                                <li><button id="art">art</button></li>
+                                <li><button id="vtubers">vtubers</button></li>
+                                <li><button id="web-dev">web development</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- interests (left) -->
+                <div id="sub-left-projection"
+                    class="w-full lg:w-[750px] h-full lg:h-[450px] order-2 md:order-1 md:overflow-y-auto hidden">
+                    <!-- to be added in JS -->
+                    <div id="content" class="justify-center content-center gap-3">
+                        <h3 id="interest" class="text-xl lg:text-2xl"></h3>
+
+                        <img id="interest-imgs" class="m-auto"/>
+
+                        <p id="interest-desc" class="text-sm lg:text-base font-sansita text-center"></p>
+
+                    </div>
+                </div>
+
+                <!-- interests (right) -->
+                <div id="sub-right-projection"
+                    class="w-full lg:w-[750px] h-full lg:h-[450px] order-1 md:order-2 md:overflow-y-auto hidden">
+                    <!-- to be added in JS -->
+                    <div id="content" class="gap-2 lg:gap-3 md:pr-2">
+                        <button id="close-btn" class="sticky top-0">
+                            <img src="images/garden/close-btn-icon.svg" alt="a close button icon" class="w-3/4 md:w-full" />
+                        </button>
+
+                        <div id="description" class="text-sm lg:text-base font-sansita"></div>
+
+                    </div>
+                </div>
+
+            </div>    
+
+            <div id="guide-interaction">
+                <button id="guide-interaction-btn" class="p-3 lg:p-4">
+                    <img src="images/garden/guide-interaction-icon.svg" alt="a guide interaction icon. hello!" class="w-3/4 md:w-auto m-auto md:m-0" />
+                </button>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p id="game">garden of dreams</p>
+        <p id="copyright">all rights reserved</p>
+    </footer>
+</body>

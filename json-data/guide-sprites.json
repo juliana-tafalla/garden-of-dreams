@@ -1,0 +1,24 @@
+[
+    {
+        "guide": 111,
+        "twClass": [
+            "w-3/4 md:w-[35%] lg:w-auto self-center -translate-y-0",
+            "z-10"
+        ],
+        "sprites": [
+            "images/garden/guide111-greeting.png",
+            "images/garden/guide111-idle.png"
+        ]
+    },
+    {
+        "guide": 222,
+        "twClass": [
+            "w-[70%] md:w-[32%] lg:w-auto self-center -translate-y-0",
+            "z-10"
+        ],
+        "sprites": [
+            "images/garden/guide222-greeting.png",
+            "images/garden/guide222-idle.png"
+        ]
+    }
+]

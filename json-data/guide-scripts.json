@@ -1,0 +1,216 @@
+[
+    {
+        "script": "introScript",
+        "type": "choices",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "...Hm? A... guest?",
+            "Ah... forgive me, dear guest. I was simply surprised by your presence.",
+            "After all... it's not often that guests stumble upon this simple sanctuary.",
+            "...I'm Guide 111, one of dear Juliana's illusory guides, but you may simply call me 111.",
+            "I was created to guide guests around her beloved garden.",
+            "She's... quite timid when it comes to her talents, but yes, she also created this sanctuary and the garden beyond this painting.",
+            "Our dear Juliana has worked hard to create this realm and showcase her talents. It would be an honour to show you around, dear guest...",
+            "Don't be... alarmed, but we can step inside the painting to learn more about dear Juliana while we explore the garden.",
+            "Hm... would you like to learn about dear Juliana's work experiences... or learn about Juliana herself?"
+        ],
+        "choices": [
+            {
+                "choice": "experiences",
+                "btnRef": "experiences-btn",
+                "nextScript": "choiceExperiencesScript"
+            },
+            {
+                "choice": "about juliana",
+                "btnRef": "about-btn",
+                "nextScript": "choiceAboutScript"
+            }
+        ]
+    },
+    {
+        "script": "choiceExperiencesScript",
+        "type": "redirect",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "...Very well, dear guest. It may seem strange, but... to enter the garden, we'll need to take the steps and go through the painting.",
+            "As your illusory guide, you'll be safe in my company...",
+            "...Now, we'll visit the Fountain of Wisdom to learn more about her work experiences."
+        ],
+        "redirect": "experiences.html"
+    },
+    {
+        "script": "choiceAboutScript",
+        "type": "redirect",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "...Very well, dear guest. Once we take the steps and enter the painting, we'll be within the garden born from her imagination.",
+            "As your illusory guide, you'll be safe in my company...",
+            "...Now, we'll visit the Field of Wonders to learn more about dear Juliana."
+        ],
+        "redirect": "about.html"
+    },
+    {
+        "script": "experiencesScript",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "...Welcome to the Fountain of Wisdom, dear guest.",
+            "Each location in the garden has an illusory projection that guests can read.",
+            "This illusory projection is currently showing dear Juliana's work experiences.",
+            "...Ah, right. Please be careful and watch out for the candles...",
+            "Guide 555 seems to worry about guests stumbling in the dark... although I find it a bit... overwhelming to see this many candles."
+        ]
+    },
+    {
+        "script": "aboutScript",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "...Welcome to the Fountain of Wisdom, dear guest.",
+            "Each location in the garden has an illusory projection that guests can read.",
+            "This illusory projection is currently showing dear Juliana's profile.",
+            "...I enjoy staying under the tree, whether by myself or with my friends... that is, my fellow illusory guides.",
+            "I visit this location so often that... I could've sworn I've seen glimpses of an unidentifiable illusory guide. Only Guide 777 seems to believe me..."
+        ]
+    },
+    {
+        "script": "mysteriousButtonScript",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "...Dear guest, if I may interrupt you for a moment...",
+            "You've pressed that mysterious button a total of... [x] times.",
+            "Oh, don't misunderstand, dear guest. I'm just as curious as you are about this... button."
+        ]
+    },
+    {
+        "script": "mysteriousButtonScript",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "Most of us aren't quite sure about this mysterious button...",
+            "I often see Guides 222, 333, 444, and 777 in a serious debate over what the button supposedly does.",
+            "...Somehow, every debate ends up dragging the rest of us to share our theories... I'd rather wish they didn't."
+        ]
+    },
+    {
+        "script": "mysteriousButtonScript",
+        "guide": 111,
+        "currLine": 0,
+        "lines": [
+            "If you're bored, dear guest...",
+            "Might I suggest you poke my brother, Guide 666, instead?",
+            "Perhaps, then, he'll stop slacking off and help keep the garden in order."
+        ]
+    },
+    {
+        "script": "introScript",
+        "type": "choices",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Well, well, well! You've made a mistake stumbling upon this place, lost soul...",
+            "...Haha! Fear not, my dear guest, I was simply kidding!",
+            "In fact, however you arrived at this humble sanctuary, consider it a miracle for us! After all, not many people know about this place.",
+            "I'm Guide 222, one of Miss Juliana's illusory guides, but you may address me as 222.",
+            "It's a pleasure to meet you, my dear guest! I hope you won't mind if I serve as your illusory guide in Miss Juliana's stellar garden.",
+            "Miss Juliana doesn't like to be in the spotlight, but know that her imaginative talents brought us illusory guides, this sanctuary, and the garden to life!",
+            "She's worked hard to create this realm as a showcase for her talents! Say, you'll explore this realm with me, won't you?",
+            "The painting here is essential to entering the garden. Just take my hand and we'll explore the garden as we learn more about Miss Juliana.",
+            "Don't be shy, I won't tease you too much, hehe! Now, would you like to learn about Miss Juliana's work experiences or learn about Juliana herself?"
+        ],
+        "choices": [
+            {
+                "choice": "experiences",
+                "btnRef": "experiences-btn",
+                "nextScript": "choiceExperiencesScript"
+            },
+            {
+                "choice": "about juliana",
+                "btnRef": "about-btn",
+                "nextScript": "choiceAboutScript"
+            }
+        ]
+    },
+    {
+        "script": "choiceExperiencesScript",
+        "type": "redirect",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Splendid, my dear guest! I can tell you seem uncertain, but simply step inside the painting and you'll enter the garden.",
+            "Don't worry, as your illusory guide, I won't leave you alone.",
+            "Ahem! Let's visit the Fountain of Wisdom to learn more about her work experiences."
+        ],
+        "redirect": "experiences.html"
+    },
+    {
+        "script": "choiceAboutScript",
+        "type": "redirect",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Splendid, my dear guest! Once we enter the painting, you'll trust me to make this journey beyond the painting stellar, won't you?",
+            "Don't worry, as your illusory guide, I won't leave you alone.",
+            "Ahem! Let's visit the Field of Wonders to learn more about Miss Juliana."
+        ],
+        "redirect": "about.html"
+    },
+    {
+        "script": "experiencesScript",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Welcome to the Fountain of Wisdom, my dear guest! See, the trip wasn't so bad, was it?",
+            "Illusory projections like this one here are scattered around the garden for guests to read.",
+            "At this location, the illusory projection has information about Miss Juliana's work experiences!",
+            "I hope you enjoy the scenery, my dear guest! My fellow illusory guides and I made sure to keep this location presentable.",
+            "...Hah, Guides 444 and 777 sure do love adding glowing flowers. Perhaps Guide 999 gave 777 the idea..."
+        ]
+    },
+    {
+        "script": "aboutScript",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Welcome to the Fountain of Wisdom, my dear guest! See, the trip wasn't so bad, was it?",
+            "Illusory projections like this one here are scattered around the garden for guests to read.",
+            "At this location, the illusory projection has information about Miss Juliana's work experiences!",
+            "...Guide 111 is a solitary soul; it's no wonder I always see her around here.",
+            "I can see why she likes it here! This place is quite peaceful, even if melancholy lingers like petrichor at times."
+        ]
+    },
+    {
+        "script": "mysteriousButtonScript",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Well, well! Aren't you silly, my dear guest?",
+            "Let me see... I believe you've pressed this mysterious button about [x] times!",
+            "Carry on and don't mind me, my dear guest! I'd also love to see what madness awaits!"
+        ]
+    },
+    {
+        "script": "mysteriousButtonScript",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "To be honest, we don't know why Miss Juliana added this mysterious button...",
+            "Guides 333, 444, 777 and I have been brainstorming ideas on what purpose this button has!",
+            "...Hah! 333 has the nerve to tell me it's pointless to question the button's secrets, but even I can tell that he's just as curious as I am!"
+        ]
+    },
+    {
+        "script": "mysteriousButtonScript",
+        "guide": 222,
+        "currLine": 0,
+        "lines": [
+            "Well, well... You're not implying that I'm a boring company, are you?",
+            "...Relax, my dear guest! Would you prefer to hear my own thoughts regarding the button?",
+            "I can tell that 777 knows something that we don't, but I'm more interested in what 444 knows. After all, she hides it better than 777 does!"
+        ]
+    }
+]

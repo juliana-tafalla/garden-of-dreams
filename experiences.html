@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>garden of dreams</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/output.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul id="navigation">
+            <li><a href="index.html">home</a></li>
+            <li><a href="experiences.html" class="active">experiences</a></li>
+            <li><a href="about.html">about me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="experiences" class="relative bg-experiences">
+            <div id="guide-interaction">
+                <button id="null" class="p-3 lg:p-4 hidden md:block invisible">
+                    <img src="images/garden/guide-interaction-icon.svg" alt="a guide interaction icon. hello!" class="w-3/4 md:w-auto m-auto md:m-0" />
+                </button>
+            </div>
+
+            <h2 id="mobile-heading"
+                class="p-3 text-2xl text-center md:hidden">
+                my experiences
+            </h2>
+        
+            <img id="background" src="images/garden/experiences-bg-1.png" alt="garden of dream's fountain of wisdom. welcome!"
+                class="w-[90%] md:w-4/5 lg:w-auto" />
+            
+            <h2
+                class="absolute top-[8%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl md:text-3xl lg:text-4xl text-center hidden md:block">
+                my experiences
+            </h2>
+
+            <!-- experiences list -->
+            <div id="experiences-list"
+                class="absolute p-2 w-[85%] md:w-9/12 lg:w-[800px] h-3/4 md:h-4/5 lg:h-[500px] top-1/2 md:top-[53%] left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-y-auto">
+                <!-- to be added in JS -->
+
+            </div>
+
+            <!-- read more -->
+            <div id="read-more"
+                class="absolute p-2 w-[85%] md:w-9/12 lg:w-[800px] h-3/4 md:h-4/5 lg:h-[500px] top-1/2 md:top-[53%] left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+                
+                <div id="projection" class="w-full lg:w-[750px] h-[100%] lg:h-[500px] p-4 m-auto overflow-y-auto">
+                
+                    <button id="close-btn" class="sticky top-0">
+                        <img src="images/garden/close-btn-icon.svg" alt="a close button icon" class="w-3/4 md:w-full" />
+                    </button>
+                
+                    <div id="overview">
+                        <a>
+                            <img id="company-logo" />
+                        </a>
+                
+                        <div>
+                            <p id="role"></p>
+                            <p id="duration" class="md:float-right"></p>
+                            <p id="company"></p>
+                            <p id="about"></p>
+                        </div>
+                    </div>
+                
+                    <div id="contributions">
+                        <p id="title">contributions and achievements</p>
+                        <!-- to be added in JS -->
+                        <p id="contributions-desc"></p>
+                
+                        <div id="contributions-list">
+                            <p id="list-intro">some of my contributions and achievements include:</p>
+                            <ul id="list">
+                                <!-- to be added in JS -->
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div id="skills">
+                        <p id="title">skills</p>
+                
+                        <div id="skills-list">
+                            <p id="list-intro">some of the skills i learned and/or improved include:</p>
+                            <ul id="list">
+                                <!-- to be added in JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="guide-interaction">
+                <button id="guide-interaction-btn" class="p-3 lg:p-4">
+                    <img src="images/garden/guide-interaction-icon.svg" alt="a guide interaction icon. hello!" class="w-3/4 md:w-auto m-auto md:m-0" />
+                </button>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <p id="game">garden of dreams</p>
+        <p id="copyright">all rights reserved</p>
+    </footer>
+
+</body>
+
+</html>

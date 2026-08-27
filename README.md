@@ -8,7 +8,9 @@
   *<p align="center">“Dreams have amazing power. They inspire us to remain resolute in the face of adversity, and help those with aspirations achieve their desires.” – Nahida, Genshin Impact</p>*
   
   <br />
-  <img src="images/garden/garden-of-dreams-logo.svg" alt="logo" width="40" height="40">
+  <a href="https://github.com/juliana-tafalla/garden-of-dreams">
+    <img src="images/garden/garden-of-dreams-logo.svg" alt="logo" width="40" height="40">
+  </a>
   <br />
   <a href="https://juliana-tafalla.github.io/garden-of-dreams/">visit the garden!</a>
   <br /><br />

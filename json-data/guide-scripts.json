@@ -69,7 +69,7 @@
         "guide": 111,
         "currLine": 0,
         "lines": [
-            "...Welcome to the Fountain of Wisdom, dear guest.",
+            "...Welcome to the Field of Wonders, dear guest.",
             "Each location in the garden has an illusory projection that guests can read.",
             "This illusory projection is currently showing dear Juliana's profile.",
             "...I enjoy staying under the tree, whether by myself or with my friends... that is, my fellow illusory guides.",
@@ -82,7 +82,7 @@
         "currLine": 0,
         "lines": [
             "...Dear guest, if I may interrupt you for a moment...",
-            "You've pressed that mysterious button a total of... [x] times.",
+            "You've pressed that mysterious button a total of... [0] times.",
             "Oh, don't misunderstand, dear guest. I'm just as curious as you are about this... button."
         ]
     },
@@ -176,9 +176,9 @@
         "guide": 222,
         "currLine": 0,
         "lines": [
-            "Welcome to the Fountain of Wisdom, my dear guest! See, the trip wasn't so bad, was it?",
+            "Welcome to the Field of Wonders, my dear guest! See, the trip wasn't so bad, was it?",
             "Illusory projections like this one here are scattered around the garden for guests to read.",
-            "At this location, the illusory projection has information about Miss Juliana's work experiences!",
+            "At this location, the illusory projection has information about Miss Juliana herself!",
             "...Guide 111 is a solitary soul; it's no wonder I always see her around here.",
             "I can see why she likes it here! This place is quite peaceful, even if melancholy lingers like petrichor at times."
         ]
@@ -189,7 +189,7 @@
         "currLine": 0,
         "lines": [
             "Well, well! Aren't you silly, my dear guest?",
-            "Let me see... I believe you've pressed this mysterious button about [x] times!",
+            "Let me see... I believe you've pressed this mysterious button about [0] times!",
             "Carry on and don't mind me, my dear guest! I'd also love to see what madness awaits!"
         ]
     },
@@ -199,7 +199,7 @@
         "currLine": 0,
         "lines": [
             "To be honest, we don't know why Miss Juliana added this mysterious button...",
-            "Guides 333, 444, 777 and I have been brainstorming ideas on what purpose this button has!",
+            "Guides 333, 444, 777, and I have been brainstorming ideas on what purpose this button has!",
             "...Hah! 333 has the nerve to tell me it's pointless to question the button's secrets, but even I can tell that he's just as curious as I am!"
         ]
     },

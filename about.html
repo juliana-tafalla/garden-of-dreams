@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>garden of dreams</title>
+    <link rel="icon" href="images/garden/garden-of-dreams-logo.ico">
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/output.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
-
 </head>
 
 <body>
@@ -30,9 +29,9 @@
         </ul>
     </nav>
 
-    <main>
-        <div id="about-me" class="relative bg-about">
-            <div id="guide-interaction">
+    <main id="about-main">
+        <div id="about-me" class="relative">
+            <div id="guide-interaction-null">
                 <button id="null" class="p-3 lg:p-4 hidden md:block invisible">
                     <img src="images/garden/guide-interaction-icon.svg" alt="a guide interaction icon. hello!" class="w-3/4 md:w-auto m-auto md:m-0" />
                 </button>
@@ -64,7 +63,7 @@
                         <p class="text-sm lg:text-base font-sansita">welcome to my garden. it's nice to meet you!</p>
                         
                         <button id="mysterious-btn">
-                            <img src="images/garden/mysterious-btn-icon-2.svg" alt="a mysterious button that looks like a moon. hm..." class="w-auto m-auto" />
+                            <img src="images/garden/mysterious-btn-icon.svg" alt="a mysterious button that looks like a moon. hm..." class="w-auto m-auto" />
                         </button>
                     </div>
                 </div>
@@ -118,7 +117,7 @@
                     class="w-full lg:w-[750px] h-full lg:h-[450px] order-1 md:order-2 md:overflow-y-auto hidden">
                     <!-- to be added in JS -->
                     <div id="content" class="gap-2 lg:gap-3 md:pr-2">
-                        <button id="close-btn" class="sticky top-0">
+                        <button id="close-btn" class="top-0 md:sticky">
                             <img src="images/garden/close-btn-icon.svg" alt="a close button icon" class="w-3/4 md:w-full" />
                         </button>
 
@@ -126,7 +125,6 @@
 
                     </div>
                 </div>
-
             </div>    
 
             <div id="guide-interaction">
@@ -134,7 +132,48 @@
                     <img src="images/garden/guide-interaction-icon.svg" alt="a guide interaction icon. hello!" class="w-3/4 md:w-auto m-auto md:m-0" />
                 </button>
             </div>
+
+            <!-- guide interaction dialogue --> 
+            <div id="small-projection-dialogue" class="w-full h-[82%] md:h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+                <div id="dark-overlay" class="absolute w-full h-[122%] md:h-full -bottom-[11%] md:bottom-0 shrink-0"></div>
+                
+                <div id="dialogue"
+                    class="w-4/5 md:w-[75%] lg:w-[700px] h-28 lg:h-36 absolute -bottom-[8%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+                
+                    <img id="guide" />
+
+                    <div id="text" class="px-3 lg:pl-5 h-full overflow-y-auto">
+                        <span id="guide-name" class="text-base md:text-lg lg:text-xl">Illusory Guide</span>
+                
+                        <div id="guide-dialogue" class="pt-2 px-3 md:px-6 text-sm md:text-base lg:text-lg">
+                            <span>...</span>
+                        </div>
+                    </div>
+
+                    <div id="next-indicator" class="absolute bottom-[10%] right-[5%] md:bottom-0 md:right-0 text-base lg:text-xl">▼</div>
+                </div>
+            </div>
+                
+            <!-- mysterious button interaction dialogue -->
+            <div id="projection-dialogue"
+                class="w-full h-[82%] md:h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-end hidden">
             
+                <div id="dark-overlay" class="absolute w-full h-[122%] md:h-full -bottom-[11%] md:bottom-0 shrink-0"></div>
+
+                <img id="guide" />
+            
+                <div id="dialogue"
+                    class="w-4/5 md:w-[75%] lg:w-[770px] h-1/4 lg:h-36 absolute -bottom-[8%] left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-y-auto">
+                    
+                    <span id="guide-name" class="text-base md:text-lg lg:text-xl">Illusory Guide</span>
+            
+                    <div id="guide-dialogue" class="pt-2 px-3 md:px-6 text-sm md:text-base lg:text-lg">
+                        <span>...</span>
+                    </div>
+            
+                    <div id="next-indicator" class="absolute bottom-0 right-0 text-base lg:text-xl">▼</div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -143,3 +182,4 @@
         <p id="copyright">all rights reserved</p>
     </footer>
 </body>
+</html>

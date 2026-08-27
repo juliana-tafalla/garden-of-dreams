@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>garden of dreams</title>
+    <link rel="icon" href="images/garden/garden-of-dreams-logo.ico">
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/output.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/output.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Stardos+Stencil:wght@400;700&display=swap">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
-
 </head>
 
 <body>
@@ -30,7 +29,7 @@
         </ul>
     </nav>
 
-    <main>
+    <main id="home-main">
         <div id="main-menu" class="relative text-center">
             <img id="background" src="images/garden/main-menu-bg.png" alt="garden of dream's sanctuary. welcome!"
                 class="w-5/6 md:w-4/5 lg:w-auto" />
@@ -38,10 +37,10 @@
             <div
                 class="w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center gap-20">
                 <div id="game-title">
-                    <p class="pb-4">may all our dreams come true...</p>
-
-                    <img id="title-image" src="images/garden/garden-of-dreams.svg" alt="garden of dream's title"
-                        class="w-4/5 md:w-5/6 lg:w-auto" />
+                    <p class="pb-4 text-base">may all our dreams come true...</p>
+                    
+                    <img id="title-image" src="images/garden/garden-of-dreams-title-glow.svg" alt="garden of dream's title"
+                        class="w-[90%] md:w-5/6 lg:w-auto" />
 
                     <p class="py-2 text-lg md:text-2xl lg:text-3xl">welcome! i'm juliana, an aspiring web developer!</p>
                 </div>
@@ -56,18 +55,11 @@
         <div id="start" class="relative hidden">
             <img id="background" src="images/garden/intro-bg.png" alt="a garden painting. welcome!"
                 class="w-[90%] md:w-4/5 lg:w-auto" />
-            <!--
-            <div id="projection-dialogue"
-                class="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-end"> -->
-            
+
             <div id="projection-dialogue"
                 class="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-end">
                 <img id="guide" />
-                
-                <!--
-                <img id="guide" src="images/guide111-greeting.png"
-                    class="w-[70%] md:w-[35%] lg:w-auto self-center -translate-y-0" />
-                -->
+
                 <div id="dark-overlay" class="absolute w-full h-full shrink-0 hidden"></div>
 
                 <div id="dialogue"
@@ -87,7 +79,6 @@
                     <button id="experiences-btn" class="w-3/5 lg:w-[420px] h-1/4 lg:h-32 hidden">experiences</button>
                     <button id="about-btn" class="w-3/5 lg:w-[420px] h-1/4 lg:h-32 hidden">about juliana</button>
                 </div>
-
             </div>
         </div>
 
@@ -96,7 +87,7 @@
                 class="w-[90%] md:w-4/5 lg:w-auto" />
 
             <div id="projection"
-                class="w-5/6 md:w-2/3 md:max-w-2xl h-[33rem] lg:h-[450px] p-4 lg:p-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-y-auto">
+                class="w-5/6 md:w-2/3 md:max-w-2xl h-[33rem] md:h-[25rem] lg:h-[450px] p-4 lg:p-6 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-y-auto">
 
                 <button id="close-btn" class="sticky top-0">
                     <img src="images/garden/close-btn-icon.svg" alt="a close button icon" class="w-3/4 md:w-full" />
@@ -119,23 +110,20 @@
                             JavaScript/jQuery</li>
                     </ul>
                     <br>
-                    once again, thank you for visiting! may all our dreams come true, indeed.
+                    once again, thank you for visiting! may all our dreams come true, indeed. it certainly felt that way
+                    for me; even with all the imperfections, i'm still so happy to bring this silly creation to life!
                     <br><br>
                     best wishes,
                     <br>
-                    juliana
+                    Juliana
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <footer>
         <p id="game">garden of dreams</p>
         <p id="copyright">all rights reserved</p>
     </footer>
-
 </body>
-
 </html>

@@ -1,3 +1,19 @@
+/* ==========================================================================
+   GARDEN OF DREAMS - CSS (style.css)
+   ========================================================================== 
+    "garden of dreams" uses both vanilla CSS and Tailwind CSS.
+    
+    The vanilla CSS (style.css) contains general/global styling for all pages, 
+    styling targeted for certain pages, and styling that are more complex (including flex and grid layouts). 
+    Vanilla CSS was used to mostly avoid cluttering the HTML pages with Tailwind CSS classes.
+
+    The stylesheet is organized in four sections:
+    - GENERAL: stylings applicable to all pages
+    - HOME: stylings targeted for index.html
+    - EXPERIENCES: stylings targeted for experiences.html
+    - ABOUT ME: stylings targeted for about.html
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -10,7 +26,7 @@ html {
 /* ==========================================================================
    GENERAL - ANIMATIONS
    ========================================================================== */
-/* animation/keyframes for the next indicator in all pages */
+/* animation for the next indicator in all pages */
 @keyframes indicatorAnimation {
     from {
         transform: translateY(0);
@@ -29,6 +45,25 @@ html {
     }
 }
 
+/* animation for guide interaction buttons in experiences.html and about.html */
+@keyframes interactionAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 /* ==========================================================================
    GENERAL - BACKGROUND IMAGES
    ========================================================================== */
@@ -43,7 +78,7 @@ the game's title image styling for index.html */
 }
 /* mobile styling */
 @media screen and (max-width: 767px) {
-    #main-menu #background { content: url("../images/garden/main-menu-bg-mobile-350x520.png"); }
+    #main-menu #background { content: url("../images/garden/main-menu-bg-mobile-400x620.png"); }
 
     #details #background, 
     #start #background {
@@ -54,6 +89,18 @@ the game's title image styling for index.html */
 
     #about-me #background { content: url("../images/garden/about-bg-1-mobile-400x620.png"); }
 }
+
+/* main's background styling for all pages */
+main {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+main#home-main { background-image: linear-gradient(to top, rgba(15, 24, 51, 0.9) 50%, rgba(25, 49, 81, 0.9) 100%), url("../images/garden/main-menu-bg.png"); }
+main#experiences-main {background-image: linear-gradient(to top, rgba(15, 24, 51, 0.9) 50%, rgba(25, 49, 81, 0.9) 100%), url("../images/garden/experiences-bg-1.png"); }
+main#about-main {background-image: linear-gradient(to top, rgba(15, 24, 51, 0.9) 50%, rgba(25, 49, 81, 0.9) 100%), url("../images/garden/about-bg-1.png"); }
 
 /* ==========================================================================
    GENERAL - BODY
@@ -74,9 +121,7 @@ body {
     font-family: "Stardos Stencil", system-ui;
 }
 
-main {
-    align-self: center;
-}
+main { align-self: center; }
 
 /* ==========================================================================
    GENERAL - BUTTONS AND LINKS
@@ -97,7 +142,6 @@ close buttons are assumed to be in a flex container (usually projections) */
     /* button hover effect applied to the image */
     :hover { scale: 1.2; }
 }
-
 
 /* ==========================================================================
    GENERAL - CHOICES
@@ -122,24 +166,20 @@ close buttons are assumed to be in a flex container (usually projections) */
     border-image-slice: 15%; /* 15% - 20% */
     border-image-repeat: repeat;
 }
-#choices button:not(#main-menu #choices button):hover {
-    background-color: rgba(15, 24, 51, 0.75);
-}
+#choices button:not(#main-menu #choices button):hover { background-color: rgba(15, 24, 51, 0.75); }
 
 /* main menu choices styling for index.html */
 #main-menu #choices {
-    button:hover {
-        scale: 1.1;
-    }
+    button:hover { scale: 1.1; }
 
     button:hover::before {
         content: url("../images/garden/main-menu-icon-left.svg");
-        padding: 0px 10px;
+        padding: 0 10px;
     }
 
     button:hover::after {
         content: url("../images/garden/main-menu-icon-right.svg");
-        padding: 0px 10px;
+        padding: 0 10px;
     }
 }
 
@@ -147,9 +187,7 @@ close buttons are assumed to be in a flex container (usually projections) */
    GENERAL - DARK OVERLAY
    ========================================================================== */
 /* dark overlay styling for guide interactions in all pages */
-#dark-overlay {
-    background-color: rgba(0, 0, 0, 0.30);
-}
+#dark-overlay { background-color: rgba(0, 0, 0, 0.30); }
 
 /* ==========================================================================
    GENERAL - DIALOGUES
@@ -182,16 +220,15 @@ close buttons are assumed to be in a flex container (usually projections) */
 
 #guide-dialogue { font-family: "Sansita", sans-serif; }
 
-/* next-indicators styling for guide interactions in all pages */
-#next-indicator {
-    animation: indicatorAnimation 1.5s ease-in 1.5s infinite reverse;
-}
+/* next-indicators animation for guide interactions in all pages */
+#next-indicator { animation: indicatorAnimation 1.5s ease-in 1.5s infinite reverse; }
 
 /* ==========================================================================
    GENERAL - GUIDE INTERACTIONS (NORMAL, MYSTERIOUS BUTTON)
    ========================================================================== */
 /* guide interaction buttons layout and styling */
-#guide-interaction {
+#guide-interaction,
+#guide-interaction-null {
     justify-self: flex-start;
     align-self: flex-end;
     flex-grow: 1;
@@ -202,28 +239,87 @@ close buttons are assumed to be in a flex container (usually projections) */
         :hover { scale: 1.1; }
     }
 }
-
 /* mobile layout */
-@media screen and (max-width: 767px) {
-    #guide-interaction {
+@media screen and (max-width: 767px) { 
+    #guide-interaction,
+    #guide-interaction-null {
         justify-self: center;
         align-self: center;
         flex-grow: 0;
     }
 }
 
+/* mysterious button styling */
 #mysterious-btn {
     :hover { scale: 1.1; }
     align-self: center;
 }
 
+/* guide interaction buttons clicked effect */
+.clicked { animation: interactionAnimation 1s ease 0s 1 normal; }
+
+/* small projection dialogues grid layout for normal guide interactions */
+#small-projection-dialogue {
+    #dialogue {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 3fr;
+        gap: 0;
+    }
+
+    #dialogue img {
+        grid-area: 1 / 1 / 3 / 2;
+        align-self: end
+    }
+
+    #dialogue #text {
+        grid-area: 1 / 2 / 3 / 3;
+        align-self: start;
+    }
+}
+/* mobile layout and styling */
+@media screen and (max-width: 767px) {
+    /*
+    #small-projection-dialogue #dialogue {
+        grid-template-columns: 1fr 2fr;
+    }
+    */
+    #small-projection-dialogue {
+        #dialogue {
+            background-color: rgba(15, 24, 51, 0);
+            border-width: 0;
+        }
+
+        #dialogue img {
+            grid-area: 1 / 1 / 3 / 3;
+            align-self: end;
+            justify-self: center;
+        }
+
+        #dialogue #text {
+            grid-area: 1 / 1 / 3 / 3;
+            align-self: start;
+            border-width: 15px;
+            background-color: rgba(15, 24, 51, 0.65);
+            border-radius: 3px;
+            border-style: solid;
+            border-image-source: url("../images/garden/border-white.svg");
+            border-image-slice: 10%; /* 15% - 20% */
+            border-image-repeat: round;
+            user-select: none;
+        }
+    }
+}
+
 /* ==========================================================================
    GENERAL - LISTS
    ========================================================================== */
-/*lists styling for all pages */
+/* lists styling for all pages */
 ul#list {
     list-style-type: disc;
-    padding: 0px 24px;
+    padding: 0 0 0 24px;
+
+    li { padding: 4px 0; }
 }
 
 /* ==========================================================================
@@ -247,7 +343,7 @@ ul#list {
     }
 
     a.active {
-        background-color: rgba(66, 63, 127, 0.80);
+        background-color: rgba(66, 63, 127, 0.8);
         border-radius: 3px;
     }
 
@@ -315,19 +411,15 @@ illusory projections refer to the transparent background for texts */
    ========================================================================== */
 /* scrollbars styling for all pages.
 guided by: https://www.creative-tim.com/twcomponents/component/scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
+::-webkit-scrollbar { width: 10px; }
 
-/* track */
+/* track styling */
 ::-webkit-scrollbar-track {
-    /* background-color: rgba(25, 49, 81, 1); blue (nav) */
-    /* background-color: rgba(66, 63, 127, 1); purple (nav) */
     background-color: rgba(245, 242, 255, 0.30);
     border-radius: 3px;
 }
 
-/* handle */
+/* handle styling */
 ::-webkit-scrollbar-thumb {
     background-color: rgba(66, 63, 127, 1);
     border-radius: 3px;
@@ -382,7 +474,7 @@ contains the content and guide interaction icons (one hidden for the layout) */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr;
-    gap: 0px 10px;
+    gap: 0 10px;
     padding: 0.75rem;
     border-width: 20px;
     background-color: rgba(15, 24, 51, 0.65);
@@ -401,11 +493,11 @@ contains the content and guide interaction icons (one hidden for the layout) */
     #experiences-list #projection {
         grid-template-rows: 1fr auto;
         grid-template-columns: 1fr;
-        gap: 10px 0px;
+        gap: 10px 0;
     }
 }
 
-/* text/image styling for list items in experiences */
+/* text/image styling for list items in experiences list and read more */
 #experiences-list a,
 #read-more a {
     display: block;
@@ -452,7 +544,8 @@ contains the content and guide interaction icons (one hidden for the layout) */
 #read-more #projection {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    /* gap: 16px; */
+    gap: 24px;
 }
 
 /* overview layout for read more */
@@ -460,15 +553,14 @@ contains the content and guide interaction icons (one hidden for the layout) */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr;
-    gap: 0px 10px;
-    /* padding: 0.75rem; */
+    gap: 0 10px;
 }
 /* mobile layout */
 @media screen and (max-width: 767px) {
     #read-more #overview {
         grid-template-rows: 1fr auto;
         grid-template-columns: 1fr;
-        gap: 10px 0px;
+        gap: 10px 0;
     }
 }
 
@@ -522,7 +614,7 @@ contains the content and guide interaction icons (one hidden for the layout) */
     }
 }
 
-/* image styling */ 
+/* profile image styling */ 
 #main-left-projection #pfp {
     pointer-events: none;
     user-select: none;
@@ -533,4 +625,3 @@ contains the content and guide interaction icons (one hidden for the layout) */
 
 /* interests images hover effects */
 #interest-imgs:hover { cursor: pointer; }
-

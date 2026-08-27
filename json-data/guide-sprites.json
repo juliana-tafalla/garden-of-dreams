@@ -1,24 +1,33 @@
 [
     {
         "guide": 111,
+        "sprites": [
+            "images/garden/guides/guide111-greeting.png",
+            "images/garden/guides/guide111-greeting-small.png",
+            "images/garden/guides/guide111-idle.png",
+            "images/garden/guides/guide111-idle-small.png"
+        ],
         "twClass": [
             "w-3/4 md:w-[35%] lg:w-auto self-center -translate-y-0",
-            "z-10"
-        ],
-        "sprites": [
-            "images/garden/guide111-greeting.png",
-            "images/garden/guide111-idle.png"
+            "absolute bottom-0 z-[-1] md:-bottom-[15px] lg:-bottom-[24px] md:z-10",
+            "w-3/4 md:w-[35%] lg:w-auto self-center -translate-y-0",
+            "absolute bottom-0 z-[-1] md:-bottom-[15px] lg:-bottom-[24px] md:z-10"
         ]
+        
     },
     {
         "guide": 222,
+        "sprites": [
+            "images/garden/guides/guide222-greeting.png",
+            "images/garden/guides/guide222-greeting-small.png",
+            "images/garden/guides/guide222-idle.png",
+            "images/garden/guides/guide222-idle-small.png"
+        ],
         "twClass": [
             "w-[70%] md:w-[32%] lg:w-auto self-center -translate-y-0",
-            "z-10"
-        ],
-        "sprites": [
-            "images/garden/guide222-greeting.png",
-            "images/garden/guide222-idle.png"
+            "absolute bottom-0 z-[-1] md:-bottom-[15px] lg:-bottom-[24px] md:z-10",
+            "w-[51%] md:w-[23%] lg:w-auto self-center -translate-y-0",
+            "absolute bottom-0 z-[-1] md:-bottom-[15px] lg:-bottom-[24px] md:z-10"
         ]
     }
 ]

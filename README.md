@@ -42,7 +42,7 @@
 <div id="project-details">
 	<h2>project details</h2>
 	<p>
-		This repository holds the assets and code for my personal website,“garden of dreams! It's an introductory and portfolio website I made for fun, which includes a visual novel-like aspect to make it more interesting!
+		This repository holds the assets and code for my personal website,“garden of dreams"! It's an introductory and portfolio website I made for fun, which includes a visual novel-like aspect to make it more interesting!
   </p>
 
   <div>
